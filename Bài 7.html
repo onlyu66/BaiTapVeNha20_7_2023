@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 7</title>
+  </head>
+  <body>
+    <script>
+      let arr = [5, 7, 300, 90, 24, 50, 75];
+      console.log(`Xin chào, đây là đàn cừu của tôi:`);
+      console.log(arr);
+      let max = arr[0];
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+          max = arr[i];
+        }
+      }
+      console.log(`Con cừu lớn nhất tôi có kích thước ${max}, hãy cạo nó`);
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === max) {
+          arr[i] = 8;
+        }
+      }
+      console.log(`Sau khi cạo lông, đây là đàn của tôi`);
+      console.log(arr);
+      let m = Number(prompt(`Nhập số tháng cạo lông: `));
+      for (let j = 1; j <= m; j++) {
+        for (let i = 0; i < arr.length; i++) {
+          arr[i] += 50;
+        }
+        console.log(`MONTH ${j}
+        Đã 1 tháng trôi qua, bầy cừu của tôi đã lớn, đây là kích thước của chúng`);
+        console.log(arr);
+
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > max) {
+            max = arr[i];
+          }
+        }
+        console.log(`Con cừu lớn nhất tôi có kích thước ${max}, hãy cạo nó`);
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === max) {
+            arr[i] = 8;
+          }
+        }
+        console.log(`Sau khi cạo lông, đây là đàn của tôi`);
+        console.log(arr);
+      }
+      let sum = 0;
+      for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+      }
+      console.log(`Đàn của tôi có tổng kích thước: ${sum}`);
+      let money = sum * 2;
+      console.log(`Tôi sẽ lấy: ${sum} * 2$ = ${money}$`);
+    </script>
+  </body>
+</html>

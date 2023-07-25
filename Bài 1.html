@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1</title>
+  </head>
+  <body>
+    <script>
+      let myColor = ["Red", "Green", "White", "Black"];
+      // Đầu ra mong đợi:
+      // "Red, Green, White, Black"
+      // "Red + Green + White + Black"
+      let result1 = "";
+      for (let i = 0; i < myColor.length; i++) {
+        result1 += myColor[i];
+        if (i !== myColor.length - 1) {
+          result1 += ", ";
+        }
+      }
+      let result2 = "";
+      for (let i = 0; i < myColor.length; i++) {
+        result2 += myColor[i];
+        if (i !== myColor.length - 1) {
+          result2 += " + ";
+        }
+      }
+      console.log(result1);
+      console.log(result2);
+    </script>
+  </body>
+</html>
